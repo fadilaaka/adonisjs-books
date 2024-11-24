@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center m-5">
+    <div class="text-center">
+        <a href="/" class="hover:underline">Home</a>
+        @!section('title')    
+        @section('menubutton')
+            <div class="space-x-4">
+                <a href="/input-book" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 inline-block">
+                    Input Buku
+                </a>
+                <a href="/list-book" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 inline-block">
+                    List Book
+                </a>
+            </div>        
+        @endsection
+        @!section('content')
+    </div>
+    @!section('script')
+</body>
+</html>
